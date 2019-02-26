@@ -1,0 +1,22 @@
+body{
+    background-color: #272058;
+    color:white;
+}
+
+h1{
+    font-family:'Pacifico', cursive;
+    margin: auto;
+}
+
+h3{
+    font-family:'Pacifico', cursive;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+}
+
+.directions{
+    margin: auto;
+    text-align: center;
+}

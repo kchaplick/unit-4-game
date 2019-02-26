@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Crystal Collectors</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Poppins:300" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <!--Body Container-->
+    <div class="container">
+        <!--body column-->
+        <div class="col-md">
+            <!--Game title row-->
+            <div class="row">
+                <h1>Crystal Collectors</h1>
+            </div>
+            <!--Directions row-->
+            <div class="row directions">
+                <h3>Collectors Guide</h3>
+                <p>You will be given a magic number at the start of the game.<br>
+
+                    There are four crystals below. By clicking on a crystal you will add a specific amount of points to
+                    your crystal count.<br>
+
+                    You win the game by matching your crystal count to the magic number. You lose the game if your
+                    crystal count goes above the magic number.<br>
+
+                    The value of each crystal is hidden from you until you click on it. <br>
+
+                    Each time the game starts, the game will change the values of each crystal.
+                </p>
+            </div>
+            <!--Random Number-->
+            <div class="row">
+                <!--Magic Number column-->
+                <div class="col-md">
+                    <h3>Magic Number</h3>
+                    <!--container for generated number-->
+                    <div></div>
+                </div>
+                <!--Score column-->
+                <div class="col-md">
+                    <h3>Your Crystal Count</h3>
+                    <!--container for score number-->
+                    <div></div>
+                </div>
+                <!--wins/losses column-->
+                <div class="col-md">
+                    <p>Wins:<span></span></p>
+                    <p>Losses:<span></span></p>
+                </div>
+            </div>
+            <!--Crystal Collection-->
+            <div class="row">
+                <h3>Choose Your Crystals</h3>
+                <div>
+                    <img alt="green crystal" src="assets/images/images/greencrystal.jpg">
+                    <img alt="teal crystal" src="assets/images/images/tealcrystal.jpg">
+                    <img alt="purple crystal" src="assets/images/images/purplecrystal.jpg">
+                    <img alt="blue crystal" src="assets/images/images/bluecrystal.jpg">
+                </div>
+            </div>
+
+
+            <!--End Body Column-->
+        </div>
+        <!--End Container-->
+    </div>
+
+</body>
