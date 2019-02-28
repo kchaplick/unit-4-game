@@ -3,20 +3,128 @@ body{
     color:white;
 }
 
-h1{
-    font-family:'Pacifico', cursive;
+/* div that holds logo text and gem images */
+.game-logo{
     margin: auto;
+    margin-bottom: 15px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
 }
+
+/* logo text */
+.game-name{
+    font-family:'Pacifico', cursive;
+
+    text-align: center;
+    margin: 10px 10px;
+}
+
+/* gems next to logo text */
+.logo-gem{
+    width: 2em;
+    height: 2em;
+    vertical-align: center;
+}
+
+/* container for directions (collectors guide) */
+.card{
+    background-color: #545D91;
+    margin-bottom: 25px;
+        
+}
+.card-header{
+    font-family:'Pacifico', cursive;
+    text-align: center;
+    font-size:1.5em;
+}
+
+.card-body{
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+    padding-bottom: 0px;
+}
+
+li{
+    list-style: none;
+    justify-content: right;    
+    margin-bottom: 5px;
+  }
+  li:before{
+    content: "";
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    background-image: url("../images/images/bulletgem.png");
+    background-size: contain;
+    margin-right: 5px;
+    position: absolute;
+    left:35px;
+    
+    background-repeat: no-repeat;
+    
+  }
 
 h3{
     font-family:'Pacifico', cursive;
+    margin: auto;
+    text-align: center;
+    margin-bottom:20px;
+}
+
+.win-loss{
+    width:15%;
 }
 
 p{
     font-family: 'Poppins', sans-serif;
 }
 
-.directions{
-    margin: auto;
-    text-align: center;
+
+
+
+.crystal-collection{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+    border: dotted 1px #ffffff
 }
+.choose-crystal{
+    margin: auto;
+    margin-right:0px;
+    
+}
+
+
+
+.crystal-image-container{
+    margin:auto;
+    margin-left:20px;
+    display: flex;
+  justify-content: space-between;
+}
+
+.crystal{
+    width:8em;
+    margin: auto;
+
+}
+
+@media (max-width:640px) {
+    .choose-crystal {
+      margin-bottom:20px;
+    }
+}
+
+@media (min-width:992px;){
+    .crystal-image-container{
+        margin:auto;
+        display: flex;
+      justify-content: space-between;
+      margin-left:0px;
+    }
+}
+
+
+
+
