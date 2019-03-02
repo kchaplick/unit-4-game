@@ -17,8 +17,10 @@ function gameSet() {
 
     //generate Magic Number 
 
-
+   
 }
+gameSet();
+
 
 
 //generate random magic number between 19 - 120
@@ -43,27 +45,28 @@ function assignGemVal(min, max) {
     //give each img an attribute and assign gemVal
     $(".crystal").each(function () {
         //random number assignment between 1 - 12
-        while (jQuery.inArray(gemValues, usedValues) != -1){
-            gemValues = Math.floor(Math.random() * (max - min + 1)) + min;       
+        while (jQuery.inArray(gemValues, usedValues) != -1) {
+            gemValues = Math.floor(Math.random() * (max - min + 1)) + min;
         }
+        //find crystal imgs add value attribute
         $(this).attr("data-val", gemValues);
         usedValues.push(gemValues);
-
-        //find crystal imgs add value attribute
-        
     })
-    //assign number to attribute
-
 }
 assignGemVal(1, 12);
+
 //onclick event to update crystal count
-    //assign onclick event to all gems
+//assign onclick event to all gems
+$(".crystal").click(function () {
+    //update crystalcount variable with value of gem
+    var getGemVal = parseInt($(this).attr("data-val"))
+    crystalCount = crystalCount + getGemVal
+    console.log("Value of data attr " + getGemVal);
+    console.log("New value of crystalCount " + crystalCount);
+    //update html in container
+    $(".crystalCounterContainer").html(crystalCount);
+});
 
-    //update crystalcount variable 
-
-    //add div and pass it crystal count
-
-    //append 
 
  //if statement for magic number matching crystal count
     //if statement
