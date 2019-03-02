@@ -3,8 +3,8 @@ var magicNumber;
 var crystalCount = 0;
 var wins = 0;
 var losses = 0;
-var gemValues;
-var usedValues = [];
+var gemValues = 0;
+var usedValues = [0];
 
 
 //initiate game function
@@ -43,23 +43,12 @@ function assignGemVal(min, max) {
     //give each img an attribute and assign gemVal
     $(".crystal").each(function () {
         //random number assignment between 1 - 12
-        //do{
-       //gemValues = Math.floor(Math.random() * (max - min + 1)) + min;
-       //$(this).attr("data-val", gemValues);
-        
-       //console.log("should be same as second" + gemValues)
-      // console.log("should not have first gem value" + usedValues)
-       // }
-        while ( jQuery.inArray(gemValues, usedValues) !== -1){
-            console.log(jQuery.inArray(gemValues, usedValues));
+        while (jQuery.inArray(gemValues, usedValues) != -1){
             gemValues = Math.floor(Math.random() * (max - min + 1)) + min;       
         }
         $(this).attr("data-val", gemValues);
         usedValues.push(gemValues);
 
-
-        console.log(gemValues);
-        console.log(usedValues)
         //find crystal imgs add value attribute
         
     })
