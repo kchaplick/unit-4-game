@@ -66,6 +66,7 @@ li{
     
   }
 
+ /*style for all counters*/ 
  .game-elements{
      margin-bottom: 20px;
  } 
@@ -75,14 +76,27 @@ h3{
     font-family:'Pacifico', cursive;
     margin: auto;
     text-align: center;
+    
    
 }
 
 /*wins and loss text*/
-
-p{
-    font-family: 'Poppins', sans-serif;
+.win-loss{
+    text-align: center;
 }
+
+.wins{
+    margin-bottom:15px;
+    font-size: 1.5em;
+    
+}
+
+.losses{
+    font-size: 1.5em;
+    
+}
+
+
 
 /*Container for the text and crystals*/
 .crystal-collection{
@@ -100,7 +114,8 @@ p{
 .crystal-image-container{
     margin:auto;
     margin-left:20px;
-    display: flex;
+    
+    overflow: hidden;
   
 }
 /*crystal images*/
@@ -124,7 +139,39 @@ p{
     font-size: 2em;
 }
 
-@media (max-width:640px) {
+.win-count{
+    margin-left:10px;
+    display: inline;
+    font-family:'Raleway', sans-serif;
+}
+
+.loss-count{
+    margin-left:10px;
+    display: inline;
+    font-family:'Raleway', sans-serif;
+   
+}
+
+@media (max-width:320px) {
+    .crystal-image-container{
+        display: flex;
+      
+    }
+    .crystal{
+        width:3em;
+        margin: auto;
+        margin-top:20px;
+    }
+}
+@media (min-width:375px) {
+    
+    .crystal{
+        width:4em;
+       
+        margin-top:20px;
+    }
+}
+@media (min-width:640px) {
     .choose-crystal {
       margin-bottom:20px;
     }
