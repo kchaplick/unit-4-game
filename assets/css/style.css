@@ -50,6 +50,7 @@ li{
     justify-content: right;    
     margin-bottom: 5px;
   }
+  /* for the gems as bullets*/
   li:before{
     content: "";
     display: inline-block;
@@ -65,6 +66,7 @@ li{
     
   }
 
+/*all headers*/
 h3{
     font-family:'Pacifico', cursive;
     margin: auto;
@@ -72,15 +74,13 @@ h3{
     margin-bottom:20px;
 }
 
-.win-loss{
-    width:15%;
-}
+/*wins and loss text*/
 
 p{
     font-family: 'Poppins', sans-serif;
 }
 
-
+/*Container for the text and crystals*/
 .crystal-collection{
    display: flex;
   justify-content: center;
@@ -88,23 +88,26 @@ p{
     border: dotted 1px #ffffff;
     
 }
-
+/*choose crystal text*/
 .choose-crystal{
-    margin: auto;
-    
-    
+    margin: auto;     
 }
-
+/*div to hold crystal images*/
 .crystal-image-container{
     margin:auto;
     margin-left:20px;
     display: flex;
   
 }
-
+/*crystal images*/
 .crystal{
     width:8em;
     margin: auto;
+
+}
+/*randomly generated number*/
+.magic-div{
+    text-align: center;
 
 }
 
@@ -114,7 +117,6 @@ p{
     }
     .crystal-image-container{
         margin:auto;
-        
         display: flex;
       
     }
@@ -122,8 +124,6 @@ p{
         width:5em;
         margin: auto;
         margin-top:20px;
-        
-    
     }
 }
 

@@ -1,30 +1,39 @@
 //global variables
 var magicNumber; 
 var crystalCount = 0;
-var win = 0;
+var wins = 0;
 var losses = 0;
 var gemValue = 0;
 
 
 //initiate game function
-
+function gameSet(){
     //reset wins and losses
-
+    wins = 0;
+    //set crystal count to 0
+    crystalCount = 0;
     //reset gemValue
-
+    
     //generate Magic Number 
 
-    //set crystal count to 0
+    
+}
+
 
 //generate random magic number between 19 - 120
+    function randomNum (min,max){
     //create div
-
+        var magicDiv = $("<div>")
     //add classes
-
+        $(magicDiv).addClass("magic-div")
     //random function
-    
-    //append
+    magicNumber = Math.floor(Math.random() * (max - min + 1) ) + min;
 
+    $(magicDiv).append(magicNumber)
+    //append
+    $(".magicContainer").append(magicDiv);
+    }
+    randomNum(1,120);
 //generate gem values
     //for loop to go through all the gems
     
